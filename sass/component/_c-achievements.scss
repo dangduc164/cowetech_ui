@@ -1,0 +1,178 @@
+.c-achievements {
+    background: url('../img/about/bg_achievements.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    @include brSpLandscape {
+        background: url('../img/about/bg_achievements-sp.jpg') no-repeat;
+        background-size: cover;
+    }
+    &__title {
+        @include brSpLandscape {
+            margin-top: 16px;
+        }
+    }
+    .c-title--center {
+        h3 {
+            font-size: 48px;
+            line-height: 65px;
+            &::after {
+                bottom: 20px;
+                width: 48px;
+                background: $cBase;
+                @include brTablet {
+                    bottom: 0;
+                    width: 60px;
+                    background: #00C1FF;
+                }
+            }
+            @include brTablet {
+                font-size: 20px;
+                line-height: 16px;
+            }
+        }
+    }
+    &__slogan {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #676767;
+        margin-top: -4px;
+        @include brTablet {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 24px;
+        }
+    }
+    &__content {
+        margin-top: 95px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -24px;
+        margin-right: -24px;
+        @include brTablet {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @include brSpLandscape {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 32px;
+        }
+    }
+    &__box {
+        flex: 25%;
+        max-width: 25%;
+        padding-right: 24px;
+        padding-left: 24px;
+        position: relative;
+        @include brTablet {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include brSpLandscape {
+            flex: 50%;
+            max-width: 50%;
+            margin-bottom: 26px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        &__desc {
+            position: absolute;
+            bottom: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            @include brTablet {}
+            @include brSpLandscape {
+                gap: 16px;
+                bottom: 10px;
+            }
+            &.top {
+                top: 21px;
+                bottom: unset;
+                gap: 0;
+                @include brSpLandscape {
+                    top: 3px;
+                    gap: 16px;
+                }
+            }
+            &__image {
+                .img-pc {
+                    @include brTablet {
+                        width: 40px;
+                    }
+                    @include brSpLandscape {
+                        display: none;
+                    }
+                }
+                .img-sp {
+                    display: none;
+                    @include brSpLandscape {
+                        display: block;
+                    }
+                }
+            }
+            &__text {
+                h4 {
+                    font-weight: 800;
+                    font-size: 37.7573px;
+                    line-height: 51px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    @include brTablet {
+                        font-size: 20px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+                    @include brSpLandscape {
+                        text-align: left;
+                    }
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 25.1715px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    white-space: nowrap;
+                    @include brTablet {
+                        white-space: nowrap;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            @include brSpLandscape {
+                .c-achievements__box__desc {
+                    &.top {
+                        .c-achievements__box__desc__text {
+                            p {
+                                font-size: 12px;
+                                line-height: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            .c-achievements__box__desc {
+                &__image {
+                    img {
+                        width: 100%;
+                        min-width: 76px;
+                        @include brSpLandscape {
+                            min-width: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

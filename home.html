@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cowatech</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link href="./assets/css/aos.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <!-- header desktop -->
+        <div class="l-header-desktop">
+            <div class="l-container-fluid">
+                <div class="l-row">
+                    <div class="l-col-auto">
+                        <a href="#" class="l-header-desktop__logo">
+                            <img src="./assets/img/common/fig_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-col l-header-desktop__right">
+                        <div class="l-header-desktop__right__inner">
+                            <div class="l-header-desktop__intro">
+                                <p>Optimal technology for life</p>
+                                <h3>COWATECH Joint Stock Company</h3>
+                            </div>
+                            <div class="l-header-desktop__nav">
+                                <div class="l-header-desktop__menu">
+                                    <ul>
+                                        <li><a href="./home.html">Trang chủ</a></li>
+                                        <li><a href="./about.html">Giới thiệu về công ty</a></li>
+                                        <li class="has-sub">
+                                            <a href="#">Lĩnh vực</a>
+                                            <div class="l-header-desktop__menu__dropdown-menu">
+                                                <ul>
+                                                    <li><a href="./offshore.html">Offshore</a></li>
+                                                    <li><a href="./lab.html">Lab</a></li>
+                                                    <li><a href="./digital.html">DX(IoT)</a></li>
+                                                    <li><a href="#">IP</a></li>
+                                                    <li><a href="./fa.html">Cowatech FA</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Dự án</a></li>
+                                        <li><a href="#">Tuyển dụng</a></li>
+                                        <li><a href="#">Blog & News</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="l-header-desktop__group-right">
+                                    <div class="l-header-desktop__languages">
+                                        <a href="#">
+                                            <span>VN</span>
+                                            <img src="./assets/img/common/icn_down_02.svg" alt="">
+                                        </a>
+                                        <div class="l-header-desktop__languages__dropdown">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/img/common/icn_vi.svg" alt="">
+                                                        <span>Viet Nam</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/img/common/icn_en.svg" alt="">
+                                                        <span>English</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/img/common/icn_ja.svg" alt="">
+                                                        <span>Japan</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="l-header-desktop__search">
+                                        <a href="#">
+                                            <img src="./assets/img/common/icn_search.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header desktop -->
+
+        <!-- header mobile -->
+        <div class="l-header-mobile">
+            <div class="l-container">
+                <div class="l-row">
+                    <div class="l-col-auto l-header-mobile__left">
+                        <a href="#" class="l-header-mobile__logo">
+                            <img src="./assets/img/common/fig_logo-header-mobile.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-col l-header-mobile__right">
+                        <a href="#" class="l-header-mobile__menu js-open-menu">
+                            <img src="./assets/img/common/icn_menu-bar.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-header-mobile__canvas">
+                <div class="l-container">
+                    <div class="l-row">
+                        <div class="l-col-auto l-header-mobile__left">
+                            <a href="#" class="l-header-mobile__logo">
+                                <img src="./assets/img/common/fig_logo-header-mobile.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="l-col l-header-mobile__right">
+                            <a href="#" class="l-header-mobile__menu js-close-menu">
+                                <img src="./assets/img/common/icn_close.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="l-header-mobile__canvas__inner">
+                        <div class="l-header-mobile__canvas__menu">
+                            <ul>
+                                <li class="active"><a href="#">Trang chủ</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Dịch vụ</a></li>
+                                <li><a href="#">Giải pháp</a></li>
+                                <li><a href="#">Dự án</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="l-header-mobile__canvas__languages">
+                            <a href="#" class="js-open-dropdown-languages">
+                                <span>Viet Nam</span>
+                                <img src="./assets/img/common/icn_down_03.svg" alt="">
+                            </a>
+                            <div class="l-header-mobile__canvas__languages__dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/common/icn_vi.svg" alt="">
+                                            <span>Viet Nam</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/common/icn_en.svg" alt="">
+                                            <span>English</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/common/icn_ja.svg" alt="">
+                                            <span>Japan</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header mobile -->
+    </header>
+    <!-- end header -->
+
+    <!-- main content -->
+    <section class="p-home">
+        <div class="p-home__slider">
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <div class="p-home__slider__follow" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="p-home__slider__follow-label">Follow Us</div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 data-aos="fade-up">CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2 data-aos="fade-up" data-aos-delay="300">COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p data-aos="fade-up" data-aos-delay="500">Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm nghiệp vụ,<br> làm apply (Android,IOS). Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất,<br> phần mềm xử
+                        lý ảnh quản lý chất lượng.</p>
+                    <a class="c-btn c-btn--white" href="#" data-aos="fade-up" data-aos-delay="700">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <div class="p-home__slider__follow" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="p-home__slider__follow-label">Follow Us</div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 data-aos="fade-up">CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2 data-aos="fade-up" data-aos-delay="300">COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p data-aos="fade-up" data-aos-delay="500">Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm nghiệp vụ,<br> làm apply (Android,IOS). Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất,<br> phần mềm xử
+                        lý ảnh quản lý chất lượng.</p>
+                    <a class="c-btn c-btn--white" href="#" data-aos="fade-up" data-aos-delay="700">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <div class="p-home__slider__follow" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="p-home__slider__follow-label">Follow Us</div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 data-aos="fade-up">CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2 data-aos="fade-up" data-aos-delay="300">COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p data-aos="fade-up" data-aos-delay="500">Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm nghiệp vụ,<br> làm apply (Android,IOS). Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất,<br> phần mềm xử
+                        lý ảnh quản lý chất lượng.</p>
+                    <a class="c-btn c-btn--white" href="#" data-aos="fade-up" data-aos-delay="700">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <div class="p-home__slider__follow" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="p-home__slider__follow-label">Follow Us</div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 data-aos="fade-up">CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2 data-aos="fade-up" data-aos-delay="300">COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p data-aos="fade-up" data-aos-delay="500">Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm nghiệp vụ,<br> làm apply (Android,IOS). Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất,<br> phần mềm xử
+                        lý ảnh quản lý chất lượng.</p>
+                    <a class="c-btn c-btn--white" href="#" data-aos="fade-up" data-aos-delay="700">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <div class="p-home__slider__follow" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="p-home__slider__follow-label">Follow Us</div>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 data-aos="fade-up">CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2 data-aos="fade-up" data-aos-delay="300">COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p data-aos="fade-up" data-aos-delay="500">Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm nghiệp vụ,<br> làm apply (Android,IOS). Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất,<br> phần mềm xử
+                        lý ảnh quản lý chất lượng.</p>
+                    <a class="c-btn c-btn--white" href="#" data-aos="fade-up" data-aos-delay="700">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-home__slider p-home__slider--sp">
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_sp_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <h3>CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2>COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p>Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm.........
+                    </p>
+                    <a class="c-btn c-btn--white" href="#">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__slider__item">
+                <img class="w-100" src="./assets/img/home/img_slider_sp_01.jpg" alt="">
+                <div class="p-home__slider__content">
+                    <h3>CHÀO MỪNG BẠN ĐẾN VỚI COWATECH JSC</h3>
+                    <h2>COWATECH ĐEM đến CHO BẠN<br> NHỮNG GIẢI PHÁP TỐI ƯU, TỐT NHẤT HIỆN NAY</h2>
+                    <p>Chúng tôi có đem đến cho bạn những sản phẩm tốt nhất trong các lĩnh vực: Tạo trang web, phần mềm.........
+                    </p>
+                    <a class="c-btn c-btn--white" href="#">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__fields">
+            <div class="l-container">
+                <div class="p-home__fields__list">
+                    <a href="#" class="p-home__fields__item">
+                        <div class="p-home__fields__icon">
+                            <img src="./assets/img/home/icn_offshore.svg" alt="">
+                        </div>
+                        <p>Offshore</p>
+                    </a>
+                    <a href="#" class="p-home__fields__item">
+                        <div class="p-home__fields__icon">
+                            <img src="./assets/img/home/icn_lab.svg" alt="">
+                        </div>
+                        <p>Lab</p>
+                    </a>
+                    <a href="#" class="p-home__fields__item">
+                        <div class="p-home__fields__icon">
+                            <img src="./assets/img/home/icn_dx.svg" alt="">
+                        </div>
+                        <p>DX(IoT)</p>
+                    </a>
+                    <a href="#" class="p-home__fields__item">
+                        <div class="p-home__fields__icon">
+                            <img src="./assets/img/home/icn_ip.svg" alt="">
+                        </div>
+                        <p>IP</p>
+                    </a>
+                    <a href="#" class="p-home__fields__item">
+                        <p>Cowatech<br> FA</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__overview">
+            <div class="l-container">
+                <div class="c-title">
+                    <span>Tổng quan về công ty</span>
+                    <h3>COWATECH</h3>
+                </div>
+                <div class="l-row">
+                    <div class="l-col p-home__overview__col-left" data-aos="fade-right">
+                        <ul>
+                            <li>
+                                <div class="name">Tên:</div>
+                                <div class="value"><b>COWATECH JOINT STOCK COMPANY</b></div>
+                            </li>
+                            <li>
+                                <div class="name">Ngày thành lâp:</div>
+                                <div class="value">4/2022</div>
+                            </li>
+                            <li>
+                                <div class="name">Người đại diện pháp luật:</div>
+                                <div class="value">Đàm Quang Mạnh</div>
+                            </li>
+                            <li>
+                                <div class="name">Số người:</div>
+                                <div class="value">8 Người</div>
+                            </li>
+                            <li>
+                                <div class="name">Vốn điều lệ:</div>
+                                <div class="value">2 tỷ VND</div>
+                            </li>
+                            <li>
+                                <div class="name">Địa chỉ:</div>
+                                <div class="value">3F Tòa Fafim A, 19 Nguyễn Trãi, Thanh Xuân, Hà Nội , Việt Nam</div>
+                            </li>
+                            <li>
+                                <div class="name">Ngân hàng giao dịch:</div>
+                                <div class="value">BIDV</div>
+                            </li>
+                            <li>
+                                <div class="name">Lĩnh vực hoạt động:</div>
+                                <div class="value">
+                                    <p><b>IT：</b>Tạo trang web, phần mềm nghiệp vụ, <br> làm apply (Android,IOS)</p>
+                                    <p><b>FA：</b>Sản xuất chế tạo thống máy tự động hóa, IoT nhà máy, phần mềm quản lý sản xuất, phần mềm xử lý ảnh quản lý chất lượng</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="l-col p-home__overview__col-right" data-aos="fade-left">
+                        <ul>
+                            <li>
+                                <div class="name">Dự án nổi bật</div>
+                                <div class="value">
+                                    <span class="value-number">40</span>
+                                    <div class="value-name">Dự án</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">Chuyên gia</div>
+                                <div class="value">
+                                    <span class="value-number">08</span>
+                                    <div class="value-name">Người</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">Đối tác</div>
+                                <div class="value">
+                                    <span class="value-number">25</span>
+                                    <div class="value-name">Công ty</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__branch">
+            <div class="l-container">
+                <div class="c-title">
+                    <h3 data-aos="fade-up">Lĩnh vực</h3>
+                </div>
+                <div class="p-home__branch__desc">
+                    <p>Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                    <a class="c-btn c-btn--border" href="#">Xem chi tiết</a>
+                </div>
+                <div class="l-row">
+                    <div class="l-col">
+                        <a href="#" class="p-home__branch__item">
+                            <div class="p-home__branch__icon">
+                                <img src="./assets/img/home/img_branch_01.svg" alt="">
+                                <img src="./assets/img/home/img_branch_01_hover.svg" alt="">
+                            </div>
+                            <h3>
+                                <span>Offshore</span>
+                                <span class="p-home__branch__btn-more">
+									MORE
+									<img src="./assets/img/home/icn_arrow_right.svg" alt="">
+								</span>
+                            </h3>
+                            <p>Tư vấn, phát triển các hệ thống tương tác thời gian thực đa nền tảng với công nghệ mới và mạnh mẽ.</p>
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <a href="#" class="p-home__branch__item">
+                            <div class="p-home__branch__icon">
+                                <img src="./assets/img/home/img_branch_02.svg" alt="">
+                                <img src="./assets/img/home/img_branch_02_hover.svg" alt="">
+                            </div>
+                            <h3>
+                                <span>Lab Development</span>
+                                <span class="p-home__branch__btn-more">
+									MORE
+									<img src="./assets/img/home/icn_arrow_right.svg" alt="">
+								</span>
+                            </h3>
+                            <p>Phát triển các giải pháp trí tuệ nhân tạo, dựa trên công nghệ nhận diện khuôn mặt, nhận diện đối tượng, vật thể.</p>
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <a href="#" class="p-home__branch__item">
+                            <div class="p-home__branch__icon">
+                                <img src="./assets/img/home/img_branch_03.svg" alt="">
+                                <img src="./assets/img/home/img_branch_03_hover.svg" alt="">
+                            </div>
+                            <h3>
+                                <span>DX(IoT)</span>
+                                <span class="p-home__branch__btn-more">
+									MORE
+									<img src="./assets/img/home/icn_arrow_right.svg" alt="">
+								</span>
+                            </h3>
+                            <p>Đội ngũ Cowatech với nhiều chuyên gia trong lĩnh vực Blockchain, đáp ứng các nhu cầu phát triển sản phẩm, ứng dụng cho doanh nghiệp của bạn.</p>
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <a href="#" class="p-home__branch__item">
+                            <div class="p-home__branch__icon">
+                                <img src="./assets/img/home/img_branch_04.svg" alt="">
+                                <img src="./assets/img/home/img_branch_04_hover.svg" alt="">
+                            </div>
+                            <h3>
+                                <span>Image Processing</span>
+                                <span class="p-home__branch__btn-more">
+									More
+									<img src="./assets/img/home/icn_arrow_right.svg" alt="">
+								</span>
+                            </h3>
+                            <p>Chúng tôi cung cấp dịch vụ offshore nhằm mang tới cho đối tác, khách hàng sản phẩm chất lượng với giá cả cạnh tranh nhất.</p>
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <a href="#" class="p-home__branch__item">
+                            <div class="p-home__branch__icon">
+                                <img src="./assets/img/home/img_branch_05.svg" alt="">
+                                <img src="./assets/img/home/img_branch_05_hover.svg" alt="">
+                            </div>
+                            <h3>
+                                <span>Cowatech FA</span>
+                                <span class="p-home__branch__btn-more">
+									MORE
+									<img src="./assets/img/home/icn_arrow_right.svg" alt="">
+								</span>
+                            </h3>
+                            <p>Đội ngũ designer của Cowatech có nhiều năm kinh nghiệm trong tư vấn, thiết kế UI/UX sản phẩm phần mềm.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__project">
+            <div class="l-container">
+                <div class="c-title">
+                    <h3 data-aos="fade-up">Dự án nổi bật</h3>
+                </div>
+                <div class="p-home__project__desc">
+                    <p>Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                    <a class="c-btn c-btn--border" href="#">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="p-home__project__slider-count"></div>
+            <div class="p-home__project__slider">
+                <div class="p-home__project__item">
+                    <a href="#">
+                        <img src="./assets/img/home/img_project_01.jpg" alt="">
+                    </a>
+                    <div class="p-home__project__info">
+                        <a class="p-home__project__btn-viewmore" href="#">
+							View more
+							<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+						</a>
+                        <div class="p-home__project__top">
+                            <span>Application</span>
+                            <h3>100 MAN</h3>
+                        </div>
+                        <p>Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                    </div>
+                </div>
+                <div class="p-home__project__item">
+                    <a href="#">
+                        <img src="./assets/img/home/img_project_02.jpg" alt="">
+                    </a>
+                    <div class="p-home__project__info">
+                        <a class="p-home__project__btn-viewmore" href="#">
+							View more
+							<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+						</a>
+                        <div class="p-home__project__top">
+                            <span>Application</span>
+                            <h3>SKYLIVE</h3>
+                        </div>
+                        <p>Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                    </div>
+                </div>
+                <div class="p-home__project__item">
+                    <a href="#">
+                        <img src="./assets/img/home/img_project_03.jpg" alt="">
+                    </a>
+                    <div class="p-home__project__info">
+                        <a class="p-home__project__btn-viewmore" href="#">
+							View more
+							<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+						</a>
+                        <div class="p-home__project__top">
+                            <span>Application</span>
+                            <h3>RICE WALLET</h3>
+                        </div>
+                        <p>Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__blog-news">
+            <div class="l-container">
+                <div class="c-title">
+                    <h3 data-aos="fade-up">Blog & News</h3>
+                </div>
+                <div class="p-home__blog-news__desc">
+                    <p>Tin tức mới nhất từ Cowatech, góc nhìn và các sự kiện công nghệ</p>
+                    <a class="p-home__blog-news__btn-viewmore" href="#">
+						View more
+						<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+					</a>
+                </div>
+                <div class="l-row">
+                    <div class="l-col" data-aos="fade-right">
+                        <div class="p-home__blog-news__col-title">
+                            <div class="c-title">
+                                <h3>Blog</h3>
+                            </div>
+                            <a class="p-home__blog-news__btn-viewmore" href="#">
+								View more
+								<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+							</a>
+                        </div>
+                        <div class="p-home__blog-news__blog-list">
+                            <a href="#" class="p-home__blog-news__item">
+                                <img class="w-100" src="./assets/img/home/img_blog_01.jpg" alt="">
+                                <h5>契約はベトナム法人と日本法人のどちらと締結すればよいですか 日本法人のどちらと締結すればよいですか ?</h5>
+                                <div class="p-home__blog-news__btn-more">
+                                    More
+                                    <img src="./assets/img/home/icn_right.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="p-home__blog-news__item">
+                                <img class="w-100" src="./assets/img/home/img_blog_01.jpg" alt="">
+                                <h5>契約はベトナム法人と日本法人のどちらと締結すればよいですか 日本法人のどちらと締結すればよいですか ?</h5>
+                                <div class="p-home__blog-news__btn-more">
+                                    More
+                                    <img src="./assets/img/home/icn_right.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="l-col" data-aos="fade-left">
+                        <div class="p-home__blog-news__col-title">
+                            <div class="c-title">
+                                <h3>News</h3>
+                            </div>
+                            <a class="p-home__blog-news__btn-viewmore" href="#">
+								View more
+								<img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+							</a>
+                        </div>
+                        <div class="p-home__blog-news__news-list">
+                            <a href="#" class="p-home__blog-news__item">
+                                <div class="p-home__blog-news__time">2022/03/16</div>
+                                <h5>契約はベトナム法人と日本法人のどちらと締結すればよいですか 日本法人のどちらと締結すればよいですか ?</h5>
+                                <div class="p-home__blog-news__btn-more">
+                                    More
+                                    <img src="./assets/img/home/icn_right.svg" alt="">
+                                    <img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="p-home__blog-news__item">
+                                <div class="p-home__blog-news__time">2022/03/16</div>
+                                <h5>契約はベトナム法人と日本法人のどちらと締結すればよいですか 日本法人のどちらと締結すればよいですか ?</h5>
+                                <div class="p-home__blog-news__btn-more">
+                                    More
+                                    <img src="./assets/img/home/icn_right.svg" alt="">
+                                    <img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="p-home__blog-news__item">
+                                <div class="p-home__blog-news__time">2022/03/16</div>
+                                <h5>契約はベトナム法人と日本法人のどちらと締結すればよいですか 日本法人のどちらと締結すればよいですか ?</h5>
+                                <div class="p-home__blog-news__btn-more">
+                                    More
+                                    <img src="./assets/img/home/icn_right.svg" alt="">
+                                    <img src="./assets/img/home/icn_arrow_right_small.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-home__recruit">
+            <div class="l-container">
+                <div class="c-title c-title--center">
+                    <h3 data-aos="fade-up">Tuyển Dụng</h3>
+                </div>
+                <p data-aos="fade-up">Chúng tôi cung cấp các giải pháp phần mềm mạnh mẽ,<br> có thể mở rộng và đáng tin cậy cho khách hàng trên toàn cầu.</p>
+                <h1 data-aos="fade-up">Let’s come <br>and develop togerther!</h1>
+                <a data-aos="fade-up" href="#" class="c-btn c-btn--border">Ứng tuyển ngay</a>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__contact">
+            <div class="l-container">
+                <div class="c-title c-title--center">
+                    <h3 data-aos="fade-up">Contact Us</h3>
+                </div>
+                <div class="l-footer__contact__inner">
+                    <h2 data-aos="fade-up" class="l-footer__contact__title">ご相談、ご質問はお気軽にどうぞ</h2>
+                    <p data-aos="fade-up" class="l-footer__contact__desc">
+                        XR／IoT／RPA／スマホアプリ開発／Webシステム<br>開発／EC構築／業務システム開発<br> ／クラウド開発／AWS構築／デザイン／UX／デジ<br>タルマーケティング関連</p>
+                    <div data-aos="fade-up" class="l-footer__contact__btn">
+                        <a href="#" class="c-btn">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-footer__content">
+            <div class="l-footer__main">
+                <div class="l-container">
+                    <a href="#" class="l-footer__main__logo">
+                        <img src="./assets/img/common/fig_logo-mobile.svg" alt="">
+                    </a>
+                    <div class="l-row">
+                        <div class="l-col l-footer__main__office">
+                            <h3 class="l-footer__main__title">OFFICE</h3>
+                            <div class="l-footer__main__content">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="./assets/img/common/icn_building.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>Văn phòng</h5>
+                                            <p>Tầng 3 tòa nhà văn phòng Fafim A, Số 19 Nguyễn Trãi, Phường Khương Trung, Quận Thanh Xuân, Hà Nội</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="./assets/img/common/icn_phone.svg" alt="">
+                                        </div>
+                                        <p>+84-24-3910-2030</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon icon-envelop">
+                                            <img src="./assets/img/common/icn_envelop.svg" alt="">
+                                        </div>
+                                        <p>info@cowa-tech.vn</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l-col-auto l-footer__main__kit">
+                            <h3 class="l-footer__main__title">KEEP IN TOUCH</h3>
+                            <div class="l-footer__main__content">
+                                <div class="l-footer__main__social-link">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><img src="./assets/img/common/icn_facebook.svg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets/img/common/icn_messenger.svg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets/img/common/icn_skype.svg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets/img/common/icn_linkedin.svg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets/img/common/icn_twitter.svg" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="l-footer__main__link">Điều khoản dịch vụ</a>
+                                <a href="#" class="l-footer__main__link">Chính sách bảo mật</a>
+                            </div>
+                        </div>
+                        <div class="l-col-auto l-footer__main__service">
+                            <h3 class="l-footer__main__title">CÁC DỊCH VỤ</h3>
+                            <div class="l-footer__main__content">
+                                <ul>
+                                    <li><a href="#">Offshore</a></li>
+                                    <li><a href="#">Lab Deverlopment</a></li>
+                                    <li><a href="#">DX (IoT)</a></li>
+                                    <li><a href="#">Image Processing</a></li>
+                                    <li><a href="#">Cowatech FA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l-col-auto l-footer__main__menu">
+                            <h3 class="l-footer__main__title">MENU</h3>
+                            <div class="l-footer__main__content">
+                                <ul>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Dự án</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                    <li><a href="#">News & Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-footer__copyright">
+                <div class="l-container">
+                    <p>© COWATECH JOINT STOCK COMPANY.<br> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <div class="c-back-to-top">
+        <div class="c-back-to-top__icon">
+            <img src="./assets/img/common/icn_up.svg" alt="">
+        </div>
+        <span>Back to top</span>
+    </div>
+    <!-- end back to top -->
+
+    <!-- Javascript -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>

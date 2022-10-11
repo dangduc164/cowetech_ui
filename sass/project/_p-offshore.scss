@@ -1,0 +1,122 @@
+.p-offshore {
+    &__solution {
+        padding: 73px 0 55px;
+        background-color: $cAccent;
+        @include brSpLandscape {
+            padding: 34px 0 48px;
+        }
+        .c-title {
+            margin-bottom: 14px;
+            @include brSpLandscape {
+                margin-bottom: 24px;
+            }
+            h3 {
+                font-size: 32px;
+                line-height: 44px;
+                color: #fff;
+                @include brSpLandscape {
+                    font-size: 20px;
+                    line-height: 16px;
+                }
+                &::after {
+                    bottom: 6px;
+                    width: 79px;
+                    height: 4px;
+                    border-radius: 0;
+                    background-color: #fff;
+                    @include brSpLandscape {
+                        width: 60px;
+                        bottom: 0;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+        &__desc {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 47px;
+            @include brSpLandscape {
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 41px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .l-row {
+            @include brSpLandscape {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            .l-col {
+                flex: 33.33333%;
+                max-width: 33.33333%;
+                margin-bottom: 84px;
+                @include brSpLandscape {
+                    flex: 50%;
+                    max-width: 50%;
+                    margin-bottom: 35px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        &__item {
+            padding-left: 113px;
+            @include brSmallPc {
+                padding-left: 0;
+            }
+            p {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: #fff;
+                @include brSpLandscape {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__icon {
+            height: 81px;
+            margin-bottom: 23px;
+            display: flex;
+            align-items: flex-end;
+            @include brSpLandscape {
+                height: 40px;
+                margin-bottom: 7px;
+            }
+            img {
+                @include brSpLandscape {
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .c-achievements {
+        @include brSpLandscape {
+            display: none;
+        }
+    }
+    +.l-footer {
+        .l-footer__contact {
+            padding: 65px 0 121px;
+            @include brSpLandscape {
+                padding: 29px 0 52px;
+                .c-title {
+                    justify-content: center;
+                    h3 {
+                        &::after {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

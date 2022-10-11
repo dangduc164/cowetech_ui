@@ -1,0 +1,98 @@
+.c-intro {
+    padding: 84px 0;
+    @include brSpLandscape {
+        padding: 35px 0;
+        background: #FBFCFF;
+    }
+    .c-title {
+        margin-bottom: 28px;
+        @include brSpLandscape {
+            margin-bottom: 33px;
+        }
+        h3 {
+            font-size: 32px;
+            line-height: 44px;
+            color: $cAccent;
+            @include brSpLandscape {
+                color: $cBase;
+                font-size: 20px;
+                line-height: 16px;
+            }
+            &::after {
+                bottom: 6px;
+                width: 79px;
+                height: 4px;
+                border-radius: 0;
+                background-color: $cBase;
+                @include brSpLandscape {
+                    width: 60px;
+                    bottom: 0;
+                    border-radius: 3px;
+                    background-color: #00C1FF;
+                }
+            }
+        }
+    }
+    .l-row {
+        margin: 0;
+    }
+    &__col-left {
+        flex: 47.138%;
+        max-width: 47.138%;
+        @include brSpLandscape {
+            flex: 100%;
+            max-width: 100%;
+        }
+        img {
+            margin-left: -41px;
+            max-width: 100%;
+            @include brSmallPc {
+                margin-left: 0;
+            }
+        }
+    }
+    &__col-right {
+        flex: 52.862%;
+        max-width: 52.862%;
+        padding-top: 93px;
+        @include brTablet {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include brSpLandscape {
+            padding-left: 0px;
+            padding-right: 0px;
+            flex: 100%;
+            max-width: 100%;
+            padding-top: 35px;
+        }
+        h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            color: $cAccent;
+            margin-bottom: 16px;
+            @include brSpLandscape {
+                display: none;
+            }
+        }
+        p {
+            font-family: 'Roboto';
+            color: #484848;
+            margin-bottom: 77px;
+            width: 575px;
+            max-width: 100%;
+            @include brSpLandscape {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
+        img {
+            max-width: 100%;
+            @include brSpLandscape {
+                display: none;
+            }
+        }
+    }
+}

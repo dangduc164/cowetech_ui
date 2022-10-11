@@ -1,0 +1,52 @@
+.p-lab {
+    .c-intro {
+        &__col-left {
+            img {
+                margin-left: -10px;
+                margin-top: -5px;
+                @include brSmallPc {
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+        &__col-right {
+            padding-top: 24px;
+            p {
+                margin-bottom: 48px;
+            }
+        }
+    }
+    .c-reason {
+        padding: 120px 0 172px;
+        @include brSpLandscape {
+            padding: 45px 0 391px;
+        }
+        &::before {
+            content: "";
+            width: calc(914/1920*100vw);
+            height: calc(792/1920*100vw);
+            background: url("../img/lab/img_reason.png") no-repeat center;
+            background-size: cover;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            @include brSpLandscape {
+                width: calc(342/375*100vw);
+                height: calc(341/375*100vw);
+                background: url("../img/lab/img_reason_sp.png") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+    .c-steps {
+        padding: 105px 0 260px;
+        @include brTablet {
+            padding: 90px 0 140px;
+        }
+        @include brSpLandscape {
+            padding: 68px 0 48px;
+        }
+    }
+}

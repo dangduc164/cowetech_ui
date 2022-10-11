@@ -1,0 +1,384 @@
+.p-contact {
+    padding: 129px 0 212px;
+    background-size: cover;
+    background: url('../img/contact/bg_contact.png') no-repeat;
+    @include brTablet {
+        padding: 60px 0 100px;
+    }
+    @include brSpLandscape {
+        padding: 47px 0 0px;
+        background: url('../img/contact/bg_contact-sp.jpg') no-repeat;
+    }
+    &__header {
+        text-align: center;
+        .c-title {
+            h3 {
+                color: $cAccent;
+                font-weight: 800;
+                line-height: 54px;
+                @include brSpLandscape {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+                &::after {
+                    width: 48px;
+                    @include brSpLandscape {
+                        bottom: -5px;
+                    }
+                }
+            }
+        }
+        &__desc {
+            font-size: 16px;
+            margin-top: 7px;
+            color: #434343;
+            font-weight: 400;
+            line-height: 26px;
+            @include brSpLandscape {
+                display: none;
+            }
+            &--sp {
+                display: none;
+                @include brSpLandscape {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 29px;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: 40px;
+        @include brSpLandscape {
+            margin-left: -24px;
+            margin-right: -24px;
+        }
+        &__inner {
+            width: 1185px;
+            max-width: 100%;
+            padding: 67px 90px;
+            border-radius: 25px;
+            background: #FFFFFF;
+            box-shadow: 0px 26px 16px rgba(29, 161, 242, 0.1);
+            @include brTablet {
+                padding: 37px 50px;
+            }
+            @include brSpLandscape {
+                padding: 28px 24px 36px;
+            }
+        }
+    }
+    &__info {
+        h3 {
+            color: $cAccent;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 33px;
+            text-transform: uppercase;
+            @include brTablet {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @include brSpLandscape {
+                text-align: center;
+            }
+        }
+        &__item {
+            gap: 13px;
+            display: flex;
+            margin-top: 32px;
+            align-items: flex-start;
+            @include brSpLandscape {
+                gap: 7px;
+                margin-top: 15px;
+            }
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0.01em;
+                color: rgba($color: #434343, $alpha: 0.68);
+                @include brTablet {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                b {
+                    color: rgba($color: #434343, $alpha: 1);
+                    font-weight: 500;
+                    @include brTablet {
+                        line-height: 19px;
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                    @include brSpLandscape {
+                        line-height: 25px;
+                    }
+                }
+                span {
+                    @include brSpLandscape {
+                        display: inline-block;
+                        margin-top: 10px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            +.p-contact__info__item {
+                margin-top: 16px;
+            }
+            &:nth-of-type(2) {
+                margin-left: 5px;
+                @include brSpLandscape {
+                    align-items: center;
+                    margin-left: 0px;
+                    gap: 16px;
+                }
+            }
+            &:nth-of-type(3) {
+                margin-left: 1px;
+                align-items: center;
+                @include brSpLandscape {
+                    margin-top: 19px;
+                    margin-left: 0;
+                    gap: 11px;
+                }
+            }
+        }
+    }
+    &__qr {
+        margin-top: 31px;
+        @include brTablet {
+            text-align: center;
+        }
+    }
+    &__keep {
+        margin-top: 31px;
+        @include brTablet {
+            text-align: center;
+        }
+        h3 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1DA1F2;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            @include brTablet {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: 'Open Sans';
+                font-style: normal;
+            }
+        }
+        ul {
+            gap: 13px;
+            display: flex;
+            margin-top: 25px;
+            @include brTablet {
+                justify-content: center;
+            }
+            @include brSpLandscape {
+                margin-top: 17px;
+            }
+        }
+    }
+    &__form {
+        text-align: end;
+        position: relative;
+        @include brTablet {
+            text-align: center;
+            margin-top: 50px;
+        }
+        @include brSpLandscape {
+            display: none;
+        }
+        input,
+        select,
+        textarea {
+            font-family: 'Roboto';
+            font-style: normal;
+            width: 397px;
+            max-width: 100%;
+            height: 44px;
+            outline: none;
+            padding: 0 16px;
+            appearance: none;
+            border-radius: 5px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(171, 171, 171, 0.65);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            color: #434343;
+            background: #fff;
+            @include brSpLandscape {
+                font-family: 'Open Sans';
+            }
+            &:focus {
+                border: 1px solid rgba(29, 161, 242, 0.65);
+            }
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                color: #A7A7A7;
+            }
+        }
+        select {
+            font-size: 16px;
+            font-weight: 400;
+            color: #A7A7A7;
+            appearance: none;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            background: #fff url('../img/contact/icn_select.svg') no-repeat center;
+            background-position-x: calc(100% - 11px);
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        textarea {
+            height: 140px;
+            padding: 11px 16px;
+            overflow-y: auto;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                color: #A7A7A7;
+            }
+        }
+        &__name {
+            font-family: 'Roboto';
+            font-style: normal;
+            top: -15px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #121212;
+            line-height: 32px;
+            margin-left: 16px;
+            position: absolute;
+            background: #fff;
+            letter-spacing: -0.02em;
+            height: 19px;
+            width: 56px;
+            max-width: 100%;
+            @include brSpLandscape {
+                font-family: 'Open Sans';
+                margin-left: 12px;
+            }
+        }
+        .filelabel {
+            width: 397px;
+            max-width: 100%;
+            height: 44px;
+            padding: 0 16px;
+            border: 1px solid rgba(171, 171, 171, 0.65);
+            border-radius: 5px;
+            display: block;
+            transition: border 300ms ease;
+            cursor: pointer;
+            text-align: start;
+            margin-left: auto;
+            position: relative;
+            background: #fff url('../img/contact/icn_upload.svg') center no-repeat;
+            background-position-x: calc(100% - 17px);
+            margin-top: -6px;
+            @include brTablet {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @include brSpLandscape {
+                background-position-x: calc(100% - 14px);
+            }
+        }
+        .filelabel .title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #A7A7A7;
+            transition: 200ms color;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+        }
+        .filelabel:hover {
+            border: 1px solid rgba(29, 161, 242, 0.65);
+        }
+        .filelabel:hover .title {
+            color: #A7A7A7;
+        }
+        #FileInput {
+            display: none;
+        }
+        &__group-btn {
+            margin-top: 53px;
+            @include brSpLandscape {
+                margin-top: 31px;
+            }
+            .c-btn {
+                border: none;
+                width: 397px;
+                max-width: 100%;
+                height: 60px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                position: relative;
+                &:hover {
+                    opacity: 0.6;
+                }
+                @include brSpLandscape {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 32px;
+                    height: 40px;
+                    min-width: 327px;
+                }
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                @include brTablet {}
+            }
+        }
+        &--sp {
+            display: none;
+            @include brSpLandscape {
+                display: block;
+                margin-top: 65px;
+            }
+        }
+    }
+    .l-col {
+        &--right {
+            padding-right: 10px;
+            @include brSpLandscape {
+                display: none;
+            }
+        }
+    }
+    +footer {
+        .l-footer__contact {
+            display: none;
+        }
+    }
+}

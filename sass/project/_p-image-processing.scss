@@ -1,0 +1,192 @@
+.p-image-processing {
+    .c-intro{
+        padding: 83px 0 184px;
+        @include brSpLandscape{
+            padding: 33px 0 43px;
+        }
+        .c-title {
+            margin-bottom: 80px;
+            @include brSpLandscape{
+                margin-bottom: 55px;
+            }
+        }
+        &__col-left img{
+            margin-left: 0;
+        }
+        &__col-right{
+            padding-top: 0;
+            margin-top: -28px;
+            @include brSpLandscape{
+                margin-top: 57px;
+            }
+            p{
+                margin-bottom: 50px;
+                @include brSpLandscape{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__solution {
+        padding: 66px 0 67px;
+        background-color: $cAccent;
+        @include brSpLandscape {
+            padding: 34px 0 48px;
+        }
+        .c-title {
+            margin-bottom: 41px;
+            @include brSpLandscape {
+                margin-bottom: 24px;
+            }
+            h3 {
+                font-size: 32px;
+                line-height: 44px;
+                color: #fff;
+                @include brSpLandscape {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                &::after {
+                    bottom: 6px;
+                    width: 79px;
+                    height: 4px;
+                    border-radius: 0;
+                    background-color: $cBase;
+                    @include brSpLandscape {
+                        width: 60px;
+                        bottom: 0;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+        &__inner{
+            width: 1417px;
+            max-width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .l-row {
+            margin-left: -16px;
+            margin-right: -16px;
+            @include brSpLandscape {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            .l-col {
+                flex: 33.33333%;
+                max-width: 33.33333%;
+                margin-bottom: 32px;
+                padding-left: 16px;
+                padding-right: 16px;
+                &:nth-child(1), &:nth-child(7){
+                    .p-image-processing__solution__text-under{
+                        font-size: 72px;
+                        line-height: 127px;
+                        top: -10px;
+                        font-size: calc(72/1903*100vw);
+                        line-height: calc(127/1903*100vw);
+                        @include brSpLandscape{
+                            top: 20px;
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                @include brSpLandscape {
+                    flex: 50%;
+                    max-width: 50%;
+                    margin-bottom: 35px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        &__item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 17px 18px 16px;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            h5{
+                font-family: 'Roboto';
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 33px;
+                color: #fff;
+                margin-bottom: 3px;
+                @include brSpLandscape{
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            p {
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #fff;
+                @include brSpLandscape {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__text-under{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: calc(64/1903*100vw);
+            line-height: calc(78/1903*100vw);
+            color: rgba(255, 255, 255, 0.25);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0.5;
+            @include brSpLandscape{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &__icon {
+            height: 50px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-end;
+            @include brSpLandscape {
+                height: 40px;
+                margin-bottom: 7px;
+            }
+            img {
+                @include brSpLandscape {
+                    
+                }
+            }
+        }
+    }
+    .c-achievements {
+        @include brSpLandscape {
+            display: none;
+        }
+    }
+    +.l-footer {
+        .l-footer__contact {
+            padding: 65px 0 121px;
+            @include brSpLandscape {
+                padding: 29px 0 52px;
+                .c-title {
+                    justify-content: center;
+                    h3 {
+                        &::after {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

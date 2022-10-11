@@ -1,0 +1,85 @@
+.p-digital {
+    .c-intro {
+        padding: 92px 0;
+        @include brTablet {
+            padding: 32px 0;
+        }
+        @include brSpLandscape {
+            padding: 13px 0;
+        }
+        .c-title h3 {
+            font-size: 32px;
+            line-height: 44px;
+            @media(min-width: 767px) {
+                br {
+                    display: none;
+                }
+            }
+            @include brTablet {
+                font-size: 20px;
+                line-height: 32px;
+            }
+            @include brSpLandscape {
+                padding-bottom: 6px;
+            }
+        }
+        &__col-left {
+            @include brSpLandscape {
+                text-align: center;
+            }
+            img {
+                margin-left: -65px;
+                margin-top: 24px;
+                @include brSmallPc {
+                    margin-left: 0;
+                    width: 100%;
+                }
+                @include brSpLandscape {
+                    margin-top: -6px;
+                    max-width: 309px;
+                }
+            }
+        }
+        &__col-right {
+            padding-top: 47px;
+            p {
+                margin-bottom: 48px;
+            }
+        }
+    }
+    .c-reason {
+        padding: 120px 0 172px;
+        @include brSpLandscape {
+            padding: 45px 0 391px;
+        }
+        &::before {
+            content: "";
+            width: calc(914/1920*100vw);
+            height: calc(790/1920*100vw);
+            background: url("../img/digital/img_reason.png") no-repeat center;
+            background-size: cover;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            @include brSpLandscape {
+                width: calc(349/375*100vw);
+                height: calc(367/375*100vw);
+                background: url("../img/digital/img_reason_sp.png") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+    .c-steps {
+        padding: 105px 0 260px;
+        @include brTablet {
+            padding: 105px 0 130px;
+        }
+        @include brSpLandscape {
+            padding: 68px 0 48px;
+        }
+    }
+    +.l-footer__contact {
+        padding: 73px 0 121px;
+    }
+}

@@ -1,0 +1,152 @@
+.c-steps {
+    padding: 85px 0 241px;
+    @include brTablet {
+        padding: 90px 0 140px;
+    }
+    @include brSpLandscape {
+        padding: 68px 0 48px;
+    }
+    .l-container {
+        width: 1271px;
+    }
+    .c-title {
+        margin-bottom: 16px;
+        @include brSpLandscape {
+            margin-bottom: 23px;
+        }
+        h3 {
+            font-family: 'Roboto';
+            font-size: 48px;
+            line-height: 56px;
+            color: #1877F2;
+            text-transform: uppercase;
+            padding-bottom: 13px;
+            @include brSpLandscape {
+                font-size: 20px;
+                line-height: 16px;
+            }
+            &::after {
+                bottom: 0;
+                width: 48px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: #1877F2;
+                @include brSpLandscape {
+                    width: 60px;
+                    bottom: 0;
+                    border-radius: 3px;
+                    background-color: #00C1FF;
+                }
+            }
+        }
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #494949;
+        margin-bottom: 125px;
+        @include brSpLandscape {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 15px;
+            margin-bottom: 14px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 43px;
+        @media (max-width: 1366px) {
+            gap: 20px;
+        }
+        @include brSpLandscape {
+            gap: 38px;
+            margin-right: 11px;
+        }
+    }
+    &__item {
+        flex: 171px;
+        max-width: 171px;
+        @include brSpLandscape {
+            flex: calc(50% - 19px);
+            max-width: calc(50% - 19px);
+            margin-bottom: -8px;
+        }
+    }
+    &__layer {
+        background: url("../img/offshore/bg_step.png") no-repeat top left;
+        background-size: cover;
+        position: relative;
+        padding: 25px 18px 49px;
+        height: 100%;
+        @include brSpLandscape {
+            padding: 19px 13px 20px 12px;
+            background-image: url("../img/offshore/bg_step_sp.png")
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 7px;
+            width: 100%;
+            height: calc(100% - 5px);
+            background: linear-gradient(122.8deg, #0BBDED 9.17%, #0369CB 87.62%);
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 28px;
+            z-index: -1;
+            @include brSpLandscape {
+                top: 6px;
+                height: 100%;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            font-style: italic;
+            line-height: 33px;
+            color: #FFFFFF;
+            margin-bottom: 37px;
+            @include brSpLandscape {
+                font-size: 19.3px;
+                line-height: 26px;
+                margin-bottom: 32px;
+            }
+            span {
+                font-family: 'Bebas Neue';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                margin-left: 20px;
+                @include brSpLandscape {
+                    font-size: 25.7px;
+                    line-height: 31px;
+                    margin-left: 15px;
+                }
+            }
+        }
+        h5 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            color: #0BBDED;
+            margin-bottom: 16px;
+            @include brSpLandscape {
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 11px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #515151;
+            @include brSpLandscape {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}

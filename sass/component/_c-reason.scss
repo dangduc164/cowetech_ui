@@ -1,0 +1,88 @@
+.c-reason {
+    padding: 122px 0 168px;
+    background: url("../img/offshore/bg_reason.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    @include brSpLandscape {
+        padding: 36px 0 243px;
+        background: url("../img/offshore/bg_reason_sp.jpg") no-repeat top center;
+        background-size: cover;
+    }
+    &::before {
+        content: "";
+        width: calc(914/1903*100vw);
+        height: calc(792/1903*100vw);
+        background: url("../img/offshore/img_reason_intro.png") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        @include brSpLandscape {
+            width: calc(319/375*100vw);
+            height: calc(242/375*100vw);
+            background: url("../img/offshore/img_reason_intro_sp.png") no-repeat center;
+            background-size: cover;
+        }
+    }
+    &__inner {
+        width: 653px;
+        max-width: 100%;
+        @include brTablet {
+            width: 470px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            color: #2E2E2E;
+        }
+    }
+    &__icon {
+        margin-bottom: 8px;
+    }
+    .c-title {
+        margin-bottom: 54px;
+        @include brSpLandscape {
+            margin-bottom: 31px;
+        }
+        h3 {
+            font-size: 32px;
+            line-height: 44px;
+            color: $cAccent;
+            @include brSpLandscape {
+                font-size: 20px;
+                line-height: 16px;
+                color: $cBase;
+            }
+            &::after {
+                bottom: 6px;
+                width: 79px;
+                height: 4px;
+                border-radius: 0;
+                background-color: $cBase;
+                @include brSpLandscape {
+                    width: 60px;
+                    bottom: 0;
+                    border-radius: 3px;
+                    background-color: #00C1FF;
+                }
+            }
+        }
+    }
+    .l-row {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .l-col {
+        flex: 50%;
+        max-width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 39px;
+        @include brSpLandscape {
+            flex: 100%;
+            max-width: 100%;
+            margin-bottom: 31px;
+        }
+    }
+}
