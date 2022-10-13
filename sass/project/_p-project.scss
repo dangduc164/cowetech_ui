@@ -1,0 +1,251 @@
+.p-project {
+    .c-intro {
+        padding: 80px 0;
+        @include brSpLandscape {
+            padding: 26px 0;
+        }
+        .c-title {
+            h3 {
+                @include brSpLandscape {
+                    padding-bottom: 22px;
+                }
+            }
+        }
+        &__col-left {
+            img {
+                margin-top: 26px;
+                max-width: 100%;
+                margin-left: 0;
+                @include brSpLandscape {
+                    margin-top: 5px;
+                }
+            }
+            &__img-pc {
+                @include brSpLandscape {
+                    display: none;
+                }
+            }
+            &__img-sp {
+                display: none;
+                @include brSpLandscape {
+                    display: block;
+                }
+            }
+        }
+        &__col-right {
+            padding-top: 27px;
+            @include brSpLandscape {
+                padding-top: 19px;
+            }
+            p {
+                margin-bottom: 47px;
+                @include brSpLandscape {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__content {
+        padding: 36px 0;
+        background: url('../img/project/bg_content.png') no-repeat;
+        background-size: cover;
+        @include brSpLandscape {
+            background: none;
+            margin-top: -40px;
+        }
+        .c-title {
+            h3 {
+                font-size: 32px;
+                line-height: 44px;
+                color: $cAccent;
+                padding-bottom: 16px;
+                @include brTablet {
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $cBase;
+                    padding-bottom: 11px;
+                }
+                &::after {
+                    background: $cBase;
+                    width: 79px;
+                    height: 4px;
+                    @include brSpLandscape {
+                        background: #00C1FF;
+                        width: 60px;
+                    }
+                }
+            }
+        }
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: -16px;
+            margin-right: -16px;
+            margin-top: 15px;
+            @include brSpLandscape {
+                margin-top: 5px;
+            }
+        }
+        &__box {
+            flex: 50%;
+            max-width: 50%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include brSpLandscape {
+                flex: 100%;
+                max-width: 100%;
+            }
+            &__intro {
+                margin-top: 24px;
+                @include brTablet {
+                    margin-top: 8px;
+                }
+                @include brSpLandscape {
+                    margin-top: 0;
+                }
+                h3 {
+                    a {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 26px;
+                        color: $cAccent;
+                        width: 365px;
+                        max-width: 100%;
+                        display: -webkit-box;
+                        line-clamp: 2;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        @include brTablet {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    @include brSpLandscape {
+                        display: none;
+                    }
+                }
+            }
+            &__image {
+                position: relative;
+                border-radius: 18px;
+                &__intro {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%), url(freepik_5827467.jpg);
+                    border-radius: 0px 0px 10.1833px 10.1833px;
+                    padding: 13px;
+                    width: 100%;
+                    min-height: 127.86px;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: end;
+                    @include brSpLandscape {
+                        display: flex;
+                    }
+                    h3 {
+                        a {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13.5778px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            display: -webkit-box;
+                            width: 183.3px;
+                            line-clamp: 2;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+            &__type {
+                margin-top: 8px;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    li {
+                        a {
+                            background: #E2E2E2;
+                            border-radius: 55px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #000000;
+                            padding: 4px 24px;
+                            text-align: center;
+                            @include brSpLandscape {
+                                font-size: 10px;
+                                line-height: 16px;
+                                padding: 1.5px 14px;
+                            }
+                        }
+                    }
+                }
+                @include brSpLandscape {
+                    display: none;
+                }
+                &--sp {
+                    display: none;
+                    @include brSpLandscape {
+                        display: block;
+                    }
+                }
+            }
+            &__desc {
+                margin-top: 11px;
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #313131;
+                    display: -webkit-box;
+                    line-clamp: 3;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    padding-right: 50px;
+                    @include brTablet {
+                        padding-right: 20px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    b {
+                        font-weight: 700;
+                    }
+                }
+            }
+            &__btn-more {
+                margin-top: 16px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: $cAccent;
+                    }
+                    img {
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

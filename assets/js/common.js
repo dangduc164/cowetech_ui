@@ -36,7 +36,7 @@ $(document).ready(function(){
             }
         ]
     });
-	$(".p-home__slider .slick-dots").append(`<a class="p-home__slider__btn-play" href="#"><img src="./../assets/img/common/icn_play.svg" alt=""></a>`)
+	$(".p-home__slider .slick-dots").append(`<a class="p-home__slider__btn-play" href="#"><img src="./assets/img/common/icn_play.svg" alt=""></a>`)
 
 	//project slider
 	$(".p-home__project__slider").slick({
